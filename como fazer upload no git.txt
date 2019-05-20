@@ -1,0 +1,18 @@
+
+------------para pegar-----------------------
+
+cria o repositório no github com um arquivo qualquer
+vem no vs code e aperta ctrl+shift+p
+escreve git clone
+coloca o endereço do repositório q vc criou
+
+---------------config------------------------
+
+$ git config --global user.name "EndrioFelipe"
+$ git config --global user.email endrio.souza@hotmail.com
+
+----------para commit--------------
+
+nomeia a mudança
+primeiro clica no  v
+depois vai em ... > push to > link do repositório
