@@ -276,13 +276,17 @@ let funcionario = new Proxy(new Funcionario('endrim'), {
     // }
 
     set(target, prop, value, receiver) {
+        console.log(target);
+        console.log(prop);
+        console.log(value);
+        console.log(target[prop]);
         console.log(`Valor antigo ${target[prop]}, valor atual: ${value}`);
         return Reflect.set(target, prop, value, receiver);
     }
 
     });
     
-    funcionario.email = 'sadfaasdfe';
+    funcionario.email = 'aaa@aaa.com';
 
     //let func = new Funcionario("endrio.souza@hotmail.com");
 

@@ -105,7 +105,9 @@
                         //target[prop] = função original
                         //target = nova função
                         //arguments = argumentos da função original sendo passados para a nova função                         
-                        Reflect.apply(target[prop], target, arguments);
+                        return Reflect.apply(target[prop], target, arguments);
+
+                        
 
                         //se vc agora digitar no console 'lista.adicionaNegociacao' vai aparecer essa nova função.
                     }
@@ -130,7 +132,7 @@
 
         //agora vamos adicionar uma lista, não mais atribuir valor a uma variável
 
-        lista.adicionaNegociacao(new Negociacao(new Date(), 1, 100));
+        lista.adicionaNegociacao(new Negociacao(new Date(), 1, 10450));
 
     </script>
 </body>

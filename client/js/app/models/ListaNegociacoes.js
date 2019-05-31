@@ -9,6 +9,7 @@ class ListaNegociacoes{
 
     adicionaNegociacao(negociacao){
         //console.log("this do metodo adicionaNegociacao: "+this)
+        console.log(`negociação: ${negociacao.volume}`)
         this._negociacoes.push(negociacao);
         //this._armadilha(this); 
          //quando criamos uma instancia de lista de negociacoes, armadilha é o que é recebido, q é a função anônima.
